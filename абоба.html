@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продаж комп'ютерів - Вибір для будь-якої мети</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Стиль для главной страницы */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #2c3e50;
+            margin: 20px 0;
+        }
+        .product p {
+            color: #7f8c8d;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* Стиль для раздела "Про нас" */
+        .about {
+            background-color: #ecf0f1;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about h2 {
+            color: #2c3e50;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* Стиль для страницы контактов */
+        .contact-form {
+            background-color: #ecf0f1;
+            padding: 50px 0;
+        }
+        .contact-form h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group input[type="submit"] {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Продаж комп'ютерів для будь-яких потреб</h1>
+    <p>Ідеальні комп'ютери для роботи, навчання та ігор</p>
+</header>
+
+<nav>
+    <a href="#">Головна</a>
+    <a href="#about">Про нас</a>
+    <a href="#computers">Наші комп'ютери</a>
+    <a href="#contact">Контакти</a>
+</nav>
+
+<main>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Про нашу компанію</h2>
+            <p>Наша компанія спеціалізується на продажу комп'ютерів для будь-яких потреб. Ми пропонуємо широкий вибір комп'ютерів для ігор, офісної роботи, навчання та інших завдань. Ми працюємо з провідними виробниками, щоб забезпечити наших клієнтів найкращою технікою за доступними цінами.</p>
+        </div>
+    </section>
+
+
+    <section id="computers" class="container">
+        <h2>Наші комп'ютери</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://ae04.alicdn.com/kf/S52018b648326449690de5a92f3dfad7eT.jpg_480x480.jpg" alt="Геймерський ПК">
+                <h3>Геймерський ПК "Gamer Pro"</h3>
+                <p>Потужний комп'ютер для ігор з високими вимогами.</p>
+                <ul>
+                    <li>Процесор: Intel Core i7 12-го покоління</li>
+                    <li>Відеокарта: NVIDIA GeForce RTX 3070</li>
+                    <li>Оперативна пам'ять: 16 GB</li>
+                    <li>Жорсткий диск: 1 TB SSD</li>
+                </ul>
+                <p class="price">25 000 грн</p>
+            </div>
+
+            <div class="product">
+                <img src="https://alfa-server.com.ua/content/images/39/480x480l85nn0/84074179693631.jpg" alt="Бюджетний ПК">
+                <h3>Бюджетний ПК "Office Basic"</h3>
+                <p>Ідеальний комп'ютер для роботи з офісними програмами.</p>
+                <ul>
+                    <li>Процесор: Intel Core i5 11400</li>
+                    <li>Відеокарта:Intel UHD Graphics 730</li>
+                    <li>Оперативна пам'ять: 12 GB</li>
+                    <li>Жорсткий диск: 250 GB SSD M.2</li>
+                </ul>
+                <p class="price">8 000 грн</p>
+            </div>
+
+            <div class="product">
+                <img src="https://powerup.ua/content/images/8/300x300l95nn0/ofysnyi-pk-powerup-44-core-i3-6100-8-gb-ssd-240-gb-nvidia-quadro-m2000-4gb-63398063414521.jpg" alt="ПК для навчання">
+                <h3>ПК для навчання "Student Work"</h3>
+                <p>Зручний комп'ютер для студентів для виконання навчальних завдань.</p>
+                <ul>
+                    <li>Процесор: Intel Core i5 11-го покоління</li>
+                    <li>Відеокарта:GTXM200 4GB</li>
+                    <li>Оперативна пам'ять: 8 GB</li>
+                    <li>Жорсткий диск: 256 GB SSD</li>
+                </ul>
+                <p class="price">12 000 грн</p>
+            </div>
+
+         <div class="product">
+                <img src="data:image/jpeg;base64,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">
+                <h3>ПК для навчання "Козак"</h3>
+                <p>Зручний комп'ютер для спавжніх козаків,.</p>
+                <ul>
+                    <li>Процесор: Intel xeon E5-2673 V3</li>
+                    <li>Відеокарта:RX 570 8 GB</li>
+                    <li>Оперативна пам'ять: 16 GB</li>
+                    <li>Жорсткий диск: 1TB GB SSD</li>
+                </ul>
+                <p class="price">10 000 грн</p>
+            </di
+
+    </section>
+     <!-- Секція "Контакти" -->
+    <section id="contact" class="contact-form">
+        <div class="container">
+            <h2>Зв'яжіться з нами</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше ім'я" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Ваш Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Відправити повідомлення">
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Продаж комп'ютерів. Усі права захищені.</p>
+</footer>
+
+</body>
+</html>
